@@ -28,6 +28,10 @@ username: nextgen
 password: UtlimateWuwei999
 database: contoso
 kube-service: mariadb
+
+### Swagger
+http://localhost:3000/api-json
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.

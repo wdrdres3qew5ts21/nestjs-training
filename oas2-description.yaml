@@ -1,0 +1,92 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "contact": {},
+    "description": "Container Ready API",
+    "title": "NestJS Training",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/claim-status": {
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "chassisNo",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "cc",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "newcar",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "warrantBook",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "operationId": "AppController_getClaimStatus"
+      }
+    },
+    "/api/product/{productId}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "productId",
+            "required": true,
+            "type": "number"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "operationId": "AppController_getProduct"
+      },
+      "post": {
+        "parameters": [],
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "operationId": "AppController_createProduct"
+      }
+    },
+    "/api/products": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "operationId": "AppController_getHello"
+      }
+    }
+  },
+  "tags": [
+    {
+      "description": "",
+      "name": "container"
+    }
+  ],
+  "x-components": {}
+}

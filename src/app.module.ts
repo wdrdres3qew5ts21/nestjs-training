@@ -8,7 +8,7 @@ import { ConfigModule } from '@nestjs/config';
   imports: [
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
-      type: 'mssql',
+      type:  'mssql',
       host: process.env.DATABASE_HOST || 'mariadb',
       port: parseInt(process.env.DATABASE_PORT) || 30082,
       username: process.env.DATABASE_USERNAME || 'nextgen',
@@ -22,6 +22,5 @@ import { ConfigModule } from '@nestjs/config';
   controllers: [AppController],
   providers: [ProductService],
 })
-
 
 export class AppModule { }
