@@ -22,6 +22,12 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+### Mariadb Connection
+
+username: nextgen
+password: UtlimateWuwei999
+database: contoso
+kube-service: mariadb
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
