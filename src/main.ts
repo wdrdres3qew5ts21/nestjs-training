@@ -1,9 +1,11 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+var dotenv =require('dotenv')
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  console.log(process.env.DATABASE_HOST)
   // https://docs.nestjs.com/openapi/introduction
   const config = new DocumentBuilder()
     .setTitle('NestJS Training')
